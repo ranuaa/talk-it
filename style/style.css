@@ -1,0 +1,72 @@
+nav {
+    box-shadow: 0px 4px 4px #DAF0ED;
+}
+
+
+/*----------- Carousel -------------------*/
+
+.user {
+    width: 40px !important;
+    height: 40px !important;
+    margin: 0 auto !important;
+}
+
+.slider {
+    margin-bottom: 200px;
+    position: relative;
+}
+
+.slider .owl-item.active.center .slider-card {
+    transform: scale(1.15);
+    opacity: 1;
+    background: #ffe259;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+}
+
+.slider-card {
+    background-color: #fff;
+    margin: 50px 15px 90px 15px;
+    border-radius: 5px;
+    box-shadow: 0 15px 45px -20px rgba(206, 191, 191, 0.493);
+    transform: scale(0.9);
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+
+.slider-card img {
+    border-radius: 5px 5px 0 0;
+}
+
+.owl-nav .owl-next {
+    position: absolute !important;
+    top: calc(50% - 25px) !important;
+    right: 0 !important;
+    opacity: 1 !important;
+    font-size: 50px !important;
+    z-index: 1 !important;
+}
+
+.owl-nav .owl-prev {
+    position: absolute !important;
+    top: calc(50% - 25px) !important;
+    left: 0 !important;
+    opacity: 1 !important;
+    font-size: 50px !important;
+    z-index: 1 !important;
+}
+/* ------------------------------------ */
+
+
+@media screen and (max-width: 425px){
+    .logo {
+        margin-left: 35%;
+        margin-bottom: 10px;
+    }
+
+    .h1-atas {
+        font-size: 25px;
+        margin-top: 15px;
+    }
+}

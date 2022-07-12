@@ -20,3 +20,49 @@ $(document).ready(function() {
     }
 })
 })
+
+
+// var share = document.getElementsByClassName('share');
+
+// for (var i = 0;i < share.length; i ++) {
+//     share[i].addEventListener('click', function(){
+//         alert("copy This Link To Share"+ ": " +window.location.href);
+//     }, false);
+// }
+
+$(document).ready(function(){
+    $(".share").click (function(){
+
+        alert("copy This Link To Share"+ ": " +window.location.href);
+    });
+
+    $("#close").click(function(){
+        $("#table").hide();
+      });
+      $(".bkak").click(function(){
+        $("#table").show();
+      });
+});
+
+var likeButton = document.querySelectorAll('.like');
+likeButton.forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    btn.classList.toggle('like2')
+  });
+});
+
+
+
+const bookmarkButton = document.querySelectorAll('.bookmark');
+bookmarkButton.forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    btn.classList.toggle('bookmark2')
+  });
+});
+
+$('.button').click(function () {
+    $('#hamburger').html($('textarea').val());
+  });
+
+
+

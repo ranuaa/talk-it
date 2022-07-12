@@ -22,13 +22,6 @@ $(document).ready(function() {
 })
 
 
-// var share = document.getElementsByClassName('share');
-
-// for (var i = 0;i < share.length; i ++) {
-//     share[i].addEventListener('click', function(){
-//         alert("copy This Link To Share"+ ": " +window.location.href);
-//     }, false);
-// }
 
 $(document).ready(function(){
     $(".share").click (function(){
@@ -65,4 +58,72 @@ $('.button').click(function () {
   });
 
 
+const tambahKomentar = document.querySelector('.submit')
 
+tambahKomentar.addEventListener("click", tambahBaru);
+
+function tambahBaru (){
+  var divBaru = document.createElement("div")
+  divBaru.classList.add('container', 'mt-2')
+
+  var atas = document.createElement("div")
+  atas.classList.add('d-flex', 'align-items-center', 'mb-2')
+
+  var profilUser = document.createElement("img")
+  profilUser.src = "../assets/usernon.png";
+  var nama = document.createElement("h4")
+  nama.classList.add('m-sm-2', 'jeneng-wong')
+  nama.textContent = ("Anda Siapa?")
+
+
+  var kotakanKomentar = document.createElement("div")
+  kotakanKomentar.classList.add('container-fluid', 'ms-lg-3', 'komentare-wong')
+
+
+  var isiKomentar = document.createElement("div")
+  isiKomentar.classList.add('container', 'm-sm-3', 'bungkus-om')
+
+  var tulisanKomentar = document.createElement("p")
+  var komentare = document.getElementById("tulisan").value;
+
+  tulisanKomentar.innerText = komentare;
+
+  var ngisor = document.createElement("div")
+  ngisor.classList.add('bwahh')
+  
+  var buttonLike = document.createElement('button')
+  var buttonBalas = document.createElement("button")
+  var buttonSimpan = document.createElement("button") 
+  var buttonShare = document.createElement("button")
+
+  buttonLike.classList.add('like')
+  var suka = document.createElement("i")
+  suka.classList.add('fa', 'fa-heart');
+  buttonSimpan.appendChild(suka);
+  
+  buttonBalas.classList.add('bkak')
+  buttonBalas.id = "reply";
+  var bales = document.createElement("i")
+  bales.classList.add('fa', 'fa-comment')
+  buttonBalas.appendChild(bales);
+
+
+
+  buttonSimpan.classList.add('bookmark')
+  var simpen = document.createElement("i")
+  simpen.classList.add('fa', 'fa-bookmark');
+  buttonSimpan.appendChild(simpen);
+
+  ngisor.append(buttonLike,buttonBalas,buttonSimpan);
+
+  isiKomentar.append(tulisanKomentar, ngisor);
+
+  kotakanKomentar.append(isiKomentar);
+
+  atas.append(profilUser,nama)
+
+  divBaru.append(atas,kotakanKomentar);
+  
+
+  document.getElementById("kabehKomentar").appendChild(divBaru);
+}

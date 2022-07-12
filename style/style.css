@@ -296,3 +296,12 @@ a.button {
 .comcom-open {
     display: none;
 }
+
+.komentare-wong {
+    border-left: 2px solid black;
+}
+
+.bungkus-om {
+    padding: 6px; 
+    background-color: #EEEEEE
+}

@@ -312,3 +312,51 @@ a.button {
 }
 
 
+.threadWrapper {
+    background-color: #ffe259;
+}
+
+.threadNamaPembuat {
+    display: flex; justify-content: space-between;
+}
+
+.isiHeading,
+.gambarThread {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.leftie {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.gambarThread  img{
+    width: 90px;
+    height: 90px;
+}
+
+.noBorder {
+    border: none;
+    background:none ;
+}
+
+.tebal {
+    font-weight: bold;
+}
+
+.garisBawah {
+    border-bottom: 1px solid black;
+}
+
+.borRad{
+    
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.alignCenter {
+    text-align: center;
+}

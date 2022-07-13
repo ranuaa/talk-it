@@ -173,6 +173,11 @@ border-radius: 30px;
         margin-top: 30px;
         text-align: center;
     }
+
+    .atas-ban {
+        margin-top: 35px !important;
+        text-align: center;
+    }
 }
 
 .like {
@@ -305,3 +310,5 @@ a.button {
     padding: 6px; 
     background-color: #EEEEEE
 }
+
+

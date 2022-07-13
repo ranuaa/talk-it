@@ -99,7 +99,7 @@ function tambahBaru (){
   buttonLike.classList.add('like')
   var suka = document.createElement("i")
   suka.classList.add('fa', 'fa-heart');
-  buttonSimpan.appendChild(suka);
+  buttonLike.appendChild(suka);
   
   buttonBalas.classList.add('bkak')
   buttonBalas.id = "reply";
@@ -114,7 +114,18 @@ function tambahBaru (){
   simpen.classList.add('fa', 'fa-bookmark');
   buttonSimpan.appendChild(simpen);
 
-  ngisor.append(buttonLike,buttonBalas,buttonSimpan);
+  buttonShare.classList.add('share')
+  var share = document.createElement("i")
+  share.classList.add('fa', 'fa-share');
+  buttonShare.appendChild(share);
+
+  const date = new Date();
+  
+
+  var tanggal = document.createElement("i")
+  tanggal.innerHTML= "Posted on " + date.toUTCString();
+
+  ngisor.append(buttonLike,buttonBalas,buttonShare,buttonSimpan,tanggal);
 
   isiKomentar.append(tulisanKomentar, ngisor);
 
@@ -125,5 +136,6 @@ function tambahBaru (){
   divBaru.append(atas,kotakanKomentar);
   
 
-  document.getElementById("kabehKomentar").appendChild(divBaru);
+  document.getElementById("kabehKomentar").prepend(divBaru);
 }
+
